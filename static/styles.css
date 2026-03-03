@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'TecniboDisplay';
-    src: url('__BASE__/static/fonts/TECNIBO-DISPLAY.otf') format('opentype');
+    src: url('/static/fonts/TECNIBO-DISPLAY.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'UniversalSans500';
-    src: url('__BASE__/static/fonts/UniversalSans-500.ttf') format('truetype');
+    src: url('/static/fonts/UniversalSans-500.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
