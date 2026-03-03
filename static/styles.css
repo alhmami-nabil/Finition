@@ -88,8 +88,8 @@
             border: 1px solid var(--border);
             border-radius: 999px;
             padding: 0.5rem 1rem 0.5rem 2.5rem;
-            color: var(--text); font-family: 'DM Sans', sans-serif;
-            font-size: 0.875rem; width: 220px; outline: none;
+            color: var(--text); font-family: 'UniversalSans500', sans-serif;
+            font-size: 0.875rem; width: 300px; outline: none;
             transition: border-color 0.2s, width 0.3s;
         }
 
@@ -109,7 +109,7 @@
         }
 
         .hero h1 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'UniversalSans500', serif;
             font-size: clamp(2rem, 5vw, 3.5rem);
             font-weight: 400; letter-spacing: -0.02em; margin-bottom: 0.75rem;
         }
@@ -130,7 +130,7 @@
             border-radius: 999px;
             padding: 0.5rem 1rem;
             color: var(--text);
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'UniversalSans500', sans-serif;
             font-size: 0.875rem;
             width: 200px;
             outline: none;
@@ -145,7 +145,7 @@
             background: rgba(200,169,110,0.1);
             border: 1px solid rgba(200,169,110,0.3);
             color: var(--accent);
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'UniversalSans500', sans-serif;
             font-size: 0.8rem;
             font-weight: 500;
             letter-spacing: 0.05em;
@@ -171,7 +171,7 @@
         .system-count { margin-left: 0; }
 
         .system-label {
-            font-family: 'Playfair Display', serif;
+            font-family: 'UniversalSans500', serif;
             font-size: 1.1rem; font-weight: 400;
             color: var(--text); letter-spacing: 0.02em;
         }
@@ -206,7 +206,7 @@
         }
 
         .page-header h1 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'UniversalSans500', serif;
             font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 400;
         }
 
@@ -331,7 +331,7 @@
         .tab {
             background: none; border: none; cursor: pointer;
             color: var(--muted);
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'UniversalSans500', sans-serif;
             font-size: 0.8rem; font-weight: 500;
             letter-spacing: 0.04em;
             padding: 0.45rem 1.1rem;
@@ -409,7 +409,7 @@
             margin: 0 auto 1.25rem; color: #e05e7a;
         }
         .del-modal h3 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'UniversalSans500', serif;
             font-size: 1.3rem; font-weight: 400;
             color: var(--text); margin-bottom: 0.6rem;
         }
@@ -418,7 +418,7 @@
         .del-modal-actions { display: flex; gap: 0.75rem; justify-content: center; }
         .del-cancel {
             background: var(--surface2); border: 1px solid var(--border);
-            color: var(--muted); font-family: 'DM Sans', sans-serif;
+            color: var(--muted); font-family: 'UniversalSans500', sans-serif;
             font-size: 0.82rem; font-weight: 500;
             padding: 0.6rem 1.4rem; border-radius: 999px;
             cursor: pointer; transition: color 0.2s, border-color 0.2s;
@@ -426,7 +426,7 @@
         .del-cancel:hover { color: var(--text); border-color: rgba(255,255,255,0.2); }
         .del-confirm {
             background: rgba(192,99,122,0.15); border: 1px solid rgba(192,99,122,0.4);
-            color: #e05e7a; font-family: 'DM Sans', sans-serif;
+            color: #e05e7a; font-family: 'UniversalSans500', sans-serif;
             font-size: 0.82rem; font-weight: 500;
             padding: 0.6rem 1.4rem; border-radius: 999px;
             cursor: pointer; transition: background 0.2s, transform 0.15s;
@@ -438,7 +438,7 @@
             background: rgba(200,169,110,0.1);
             border: 1px solid rgba(200,169,110,0.3);
             color: var(--accent);
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'UniversalSans500', sans-serif;
             font-size: 0.8rem; font-weight: 500;
             letter-spacing: 0.05em; text-transform: uppercase;
             padding: 0.45rem 1rem; border-radius: 999px;
@@ -486,7 +486,7 @@
             50%      { transform: translateY(18px); opacity: 0.7; }
         }
         .scan-modal h3 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'UniversalSans500', serif;
             font-size: 1.4rem; font-weight: 400;
             color: var(--text); margin-bottom: 0.5rem;
         }
@@ -496,7 +496,7 @@
             width: 100%; background: var(--surface2);
             border: 1px solid rgba(200,169,110,0.2); border-radius: 12px;
             padding: 0.85rem 1rem; color: var(--text);
-            font-family: 'DM Sans', sans-serif; font-size: 1rem;
+            font-family: 'UniversalSans500', sans-serif; font-size: 1rem;
             text-align: center; outline: none; letter-spacing: 0.06em;
             transition: border-color 0.2s;
         }
@@ -578,7 +578,7 @@
         }
 
         .fav-empty h2 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'UniversalSans500', serif;
             font-size: 2rem; font-weight: 400; margin-bottom: 0.75rem;
         }
 
