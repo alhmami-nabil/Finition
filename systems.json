@@ -7,12 +7,12 @@
         "display": "Unilin",
         "pattern": "UN_%"
     },
-    "resopal": {
-        "display": "Resopal",
-        "pattern": "RE_%"
-    },
     "polerey": {
         "display": "Polerey",
         "pattern": "PO_%"
+    },
+    "ral": {
+        "display": "Ral",
+        "pattern": "RAL_%"
     }
 }
