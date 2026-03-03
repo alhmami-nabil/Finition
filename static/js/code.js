@@ -784,6 +784,37 @@ function initializeTabs() {
 
 initializeTabs();
 
+// Eagerly fetch data for any system that has saved stock/favorites items,
+// so Stock and Favorites pages render correctly immediately on page load
+(function preloadSavedSystems() {
+    const allSaved = [...stockStore.get(), ...favStore.get()];
+    if (allSaved.length === 0) return;
+
+    SYSTEMS.forEach(key => {
+        const pattern   = SYSTEM_PATTERN[key] || '';
+        const sysPrefix = pattern.endsWith('_%') ? pattern.slice(0, -2).toUpperCase() : null;
+        const hasSaved  = allSaved.some(s =>
+            (sysPrefix && (s.code1.toUpperCase().startsWith(sysPrefix) ||
+                           s.code2.toUpperCase().startsWith(sysPrefix)))
+        );
+        if (hasSaved && !imagesBySystem[key]) {
+            fetch(`${base}/api/images/${key}`)
+                .then(r => r.json())
+                .then(data => {
+                    imagesBySystem[key] = data;
+                    // If stock or favorites page is currently active and showing this system, re-render
+                    const activePage = document.querySelector('.page.active')?.id;
+                    if (activePage === 'page-stock' && activeTab.stock === key) {
+                        renderStock(key, data);
+                    } else if (activePage === 'page-favorites' && activeTab.favorites === key) {
+                        renderFavorites(key, data);
+                    }
+                })
+                .catch(() => {});
+        }
+    });
+})();
+
 // Support ?tab=key in URL
 (function() {
     const params   = new URLSearchParams(location.search);

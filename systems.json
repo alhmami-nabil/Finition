@@ -3,12 +3,16 @@
         "display": "Egger",
         "pattern": "EG_%"
     },
-    "ral": {
-        "display": "RAL",
-        "pattern": "RAL_%"
-    },
     "unilin": {
         "display": "Unilin",
         "pattern": "UN_%"
+    },
+    "resopal": {
+        "display": "Resopal",
+        "pattern": "RE_%"
+    },
+    "polerey": {
+        "display": "Polerey",
+        "pattern": "PO_%"
     }
 }

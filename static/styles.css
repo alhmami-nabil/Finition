@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'TecniboDisplay';
-    src: url('/static/fonts/TECNIBO-DISPLAY.otf') format('opentype');
+    src: url('__BASE__/static/fonts/TECNIBO-DISPLAY.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'UniversalSans500';
-    src: url('/static/fonts/UniversalSans-500.ttf') format('truetype');
+    src: url('__BASE__/static/fonts/UniversalSans-500.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -84,11 +84,11 @@
         }
 
         #searchInput {
-            background: #b3b3b3;
+            background: var(--surface2);
             border: 1px solid var(--border);
             border-radius: 999px;
             padding: 0.5rem 1rem 0.5rem 2.5rem;
-            color: var(--text); font-family: 'UniversalSans500', sans-serif;
+            color: var(--text); font-family: 'DM Sans', sans-serif;
             font-size: 0.875rem; width: 220px; outline: none;
             transition: border-color 0.2s, width 0.3s;
         }
