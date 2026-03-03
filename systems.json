@@ -1,0 +1,14 @@
+{
+    "egger": {
+        "display": "Egger",
+        "pattern": "EG_%"
+    },
+    "ral": {
+        "display": "RAL",
+        "pattern": "RAL_%"
+    },
+    "unilin": {
+        "display": "Unilin",
+        "pattern": "UN_%"
+    }
+}
